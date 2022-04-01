@@ -1,0 +1,71 @@
+@import url(common/reset.css);
+.section{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section .sec-con{
+  flex: 0 1 400px;
+  height: 300px;
+  background-color: #ccc5;
+  position: relative;
+  overflow: hidden;
+}
+.section .sec-con .gallery{
+  width: 500%;
+  height: inherit;
+  position: absolute;
+  left: 0;
+}
+.section .sec-con .gallery ul{
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+}
+.section .sec-con .gallery ul>li{
+  flex: 1;
+  height: inherit;
+  background-color: thistle;
+}
+
+.section .sec-con .bcon{
+  width: 100%;
+  height: auto;
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+.section .sec-con .bcon .items{
+  width: 150px;
+  height: auto;
+}
+.section .sec-con .bcon .items ul{
+  display: flex;
+  justify-content: space-between;
+}
+.section .sec-con .bcon .items ul>li{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid;
+}
+.section .sec-con .bcon .items ul>li:hover{
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.on{
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 5px rgb(0, 0, 0);
+  opacity: 0.5;
+
+}
+
+.gallery-ani{
+  transition: all 0.3s;
+}

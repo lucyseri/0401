@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="js/js_event_ex.js" defer></script>
+  <link rel="stylesheet" href="css/js_event_ex.css">
+  <style>
+    .event-parent{
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .event-parent .event-con{
+      flex: 0 1 300px;
+      border: 1px solid;
+    }
+    .event-parent .event-con img{
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .event-parent .event-con p{
+      border: 1px solid;
+      background-color: blanchedalmond;
+      text-align: center;
+    }
+    .popup{
+      position: fixed; 
+      background-color: rgba(0, 0, 0, 0.534);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* transition 안 먹혀
+      display: none; 
+      width: 100%;
+      height: 100vh; 
+      현재위치와 상관없이(relative) 브라우저에 맞추기
+      left: 0;
+      top: 0; */
+      left: 50%;
+      top: 50%;
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    .popup .popup-con{
+      flex: 0 1 400px;
+      height: auto;
+      border: 1px solid #fff;
+      color: #fff;
+      /*position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      transform: translateX(-50%);
+      transform: translateY(-50%); */
+    }
+    .popup .popup-con img{
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .pop-animation{
+      transition: all 0.3s;
+      opacity: 1;
+      width: 100%;
+      height: 100vh;
+      left: 0;
+      top: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="section">
+    <div class="sec-con">
+      <div class="gallery">
+        <ul>
+          <li>GALLERY1</li>
+          <li>GALLERY2</li>
+          <li>GALLERY3</li>
+          <li>GALLERY4</li>
+          <li>GALLERY5</li>
+        </ul>
+      </div>
+      <div class="bcon">
+        <div class="items">
+          <ul>
+            <li class="on"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
